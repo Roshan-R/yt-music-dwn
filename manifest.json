@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "YtMusic Downloader",
+  "description": "Download music right from youtube-music",
+  "version": "1.0",
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [
+    "downloads",
+    "background",
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": "yt.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "extension.js"
+      ]
+    }
+  ]
+}
