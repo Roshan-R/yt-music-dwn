@@ -97,9 +97,9 @@ async function addPlayerDownloadButton() {
   let button = createDownloadButton();
   let container = document.querySelector('.middle-controls').
   querySelector('.middle-controls-buttons')
-  button.onclick = function () {
+  button.onclick = async() => {
     let id = getCurrentSongId();
-    Download(id);
+    await Download(id);
   }
   container.appendChild(button);
 }
