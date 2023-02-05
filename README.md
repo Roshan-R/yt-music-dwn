@@ -7,6 +7,10 @@
 
 **A browser extension to download music from Youtube Music.**
 
+<a href="https://addons.mozilla.org/en-US/firefox/addon/ytmusic-downloader/">
+  <img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get IEEE Xplorer for Firefox"> 
+</a>
+
 ## Manual Installation
 
 - Download and unzip `yt-music-dwn.zip` ([latest release desirable](https://github.com/Roshan-R/yt-music-dwn/releases)).
