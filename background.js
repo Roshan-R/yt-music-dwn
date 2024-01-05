@@ -1,9 +1,10 @@
-chrome.runtime.onMessage.addListener((data, sender, sendResponse) => {
-  console.log(data);
-  let f = data.title.replace(/[/\\?%*:|"<>]/g, '-');
-  chrome.downloads.download({
-    url: data.url,
-    filename: f + ".webm"
-  })
-  return true
+chrome.runtime.onMessage.addListener(async (data, sender, sendResponse) => {
+    videoInfo = await window.getBestAudioUrl(data);
+    let filename = videoInfo.title.replace(/[/\\?%*:|"<>]/g, '-');
+
+    chrome.downloads.download({
+        url: videoInfo.url,
+        filename: filename + ".webm"
+    })
+    return true
 });
