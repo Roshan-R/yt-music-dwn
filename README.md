@@ -30,3 +30,5 @@ Remember that you have to update manually also.
 
 ## Credits
 Installation steps taken from [uBlock Origin's Readme](https://github.com/gorhill/uBlock/tree/master/dist#install).
+
+14a9e526499048bbab5988edd85b2c32
